@@ -4,6 +4,10 @@ In this project I look to explore the API of Bitso, implement some algorithms fo
 
 ## Exploring API
 
+The API of Bitso has a complete repository with all the information in the next link: [Bitso API Repository](https://github.com/bitsoex/bitso-py)
+
+Here I will try to extract all the insights that I have about the use of this tool, with the most necesary instructions and report their behaivor 
+
 ## Designing Algorithm for trading
 
 ## Deploying in web server
