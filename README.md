@@ -8,7 +8,7 @@ The API of Bitso has a complete repository with all the information in the next 
 
 Here I will try to extract all the insights that I have about the use of this tool, with the most necesary instructions and report their behaivor.
 
-The first thing to do is installing the bitso API, I am having some problems trying to install it with conda over a virtual envioroment, I couldnt make pip3 work, and with pip never find the bitso api to be installed. So I had to install python3 alone over other location to be able to installed with pip3 just in the terminal with: 
+The first thing to do is installing the bitso API.Is quite easy just using pip3 with the following instruction over the bash terminal: 
 
     pip3 install bitso-py
     
