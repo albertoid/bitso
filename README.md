@@ -19,7 +19,7 @@ After thar just import the library with:
 In the following link is the code of the exploratory simple work to find out in general matter what the API does and how can be done the placing y cancelling orders procedure. [Code of exploration](https://github.com/albertoid/bitso/blob/master/Bitso.ipynb)
 
 ## Data Sources
-
+The main data source at the begining is from Bitso it self, by means of scraping, all the historical indormation has been downloaded, and with some aditional functions it will be updated automatically.
 
 ## Designing Algorithm for trading
 
