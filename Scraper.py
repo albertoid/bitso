@@ -9,6 +9,7 @@ from selenium import webdriver
 from selenium.webdriver.common.action_chains import ActionChains
 
 from pyvirtualdisplay import Display
+from xvfbwrapper import Xvfb
 
 coins=['btc','eth','xrp','ltc','bch','tusd','mana','gnt','bat','dai']
 URLs={}
@@ -185,6 +186,9 @@ def loadWebpage(URL=''):
 
 ## Daily Scraper
 
+vdisplay = Xvfb(width=2880, height=1800)
+vdisplay.start()
+
 for i in coins:
     # Revisar csv y obtener ultima fecha
     ok=False
@@ -241,3 +245,5 @@ for i in coins:
                 driver.close()
             except:
                 pass
+
+vdisplay.stop()
