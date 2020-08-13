@@ -24,7 +24,34 @@ The main data source at the begining is from Bitso it self, by means of scraping
 ## Designing Algorithm for trading
 
 ## Deploying in web server
+For a deploy in web server I'm using an Ubuntu's free instance in EC2 AWS. is needed to install a virtual display and configure the driver of selenium, I'll explain how to do this.:
 
+### Virtual Display
+There are several virtual displays, but which is working better at least in Ubuntu is [xvfbwrapper](https://github.com/cgoldberg/xvfbwrapper), here is how to install it and use it.
+
+It is needed to install Xvfb, you can doit with `sudo apt-get install xvfb`, `yum install xorg-x11-server-Xvfb` , etc
+
+### Configuration of Selenium Firefox's Web Driver
+
+For this the guide that I could found and that works for me is [this](https://askubuntu.com/questions/870530/how-to-install-geckodriver-in-ubuntu/871077#871077?newreg=c009dd10ec804e188de0f596d03cb1a0):
+
+Go to the geckodriver [releases page](https://github.com/mozilla/geckodriver/releases). Find the latest version of the driver for your platform and download it. For example:
+
+> wget https://github.com/mozilla/geckodriver/releases/download/v0.27.0/geckodriver-v0.27.0-linux64.tar.gz
+
+Extract the file with:
+
+>tar -xvzf geckodriver*
+
+Make it executable:
+
+>chmod +x geckodriver
+
+Add the driver to your PATH so other tools can find it:
+
+>export PATH=$PATH:/path-to-extracted-file/.
+
+Without this is possible that selenium does not work properly.
 
 
 ## Notifications of Trading
